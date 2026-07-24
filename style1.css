@@ -1,0 +1,373 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+#hero{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    background-image: url("https://images.unsplash.com/photo-1685633224402-3410df959f98?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGd5bSUyMGV4dGVyaW9yJTIwaW1hZ2UlMjBmaXQlMjB6b25lJTIwZ3ltfGVufDB8fDB8fHww");
+    background-position: center;
+    background-size: cover;
+    color:beige;
+    overflow:hidden;
+    button{
+        font-size: 20px;
+        background-color:gray;
+        color:white;
+        border:3px solid black;
+        border-radius:10px;
+        transition:0.3s;
+        cursor:pointer;
+        margin:20px;
+    }
+    button:hover{
+        background-color: #ff512f;
+        box-shadow: 5px 12px 20px #9d2a03;
+        transform:scale(1.1);
+    }
+}
+.style{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-style: oblique;
+    text-align: center;
+    color: darkslateblue;
+}
+#gym{
+    display:flex;
+    font-size:12px;
+    width:100%;
+    border:3px solid blue;
+    box-shadow: 5px 12px 20px darkslateblue;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    overflow: hidden;
+    img{
+        width:100%;
+        max-width:200px;
+        height:150px;
+        border:3px solid black;
+        box-shadow:5px 5px 5px grey;
+        margin:20px;
+        border-radius: 15px;
+        transition: 0.3s;
+    }
+    img:hover{
+        transform:scale(1.1);
+    }
+}
+#trainer{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 20px;
+    gap:10px;
+    padding:10px;
+    border:3px solid aqua;
+    box-shadow: 5px 5px 5px blue;
+    text-align: center;
+    overflow: hidden;
+    .cards{
+        border:3px solid aquamarine;
+        box-shadow: 5px 5px 5px darkblue;
+        transition:0.3s;
+    }
+    .cards:hover{
+        transform:translateY(-8px);
+        box-shadow: 20px 20px 20px rgba(5, 5, 139, 0.59);
+    }
+    img{
+        width:100%;
+        max-width:200px;
+        height:150px;
+        border:3px solid blue;
+        box-shadow:5px 5px 5px darkslateblue;
+        margin:20px;
+        border-radius: 15px;
+        transition: 0.3s;
+    }
+    img:hover{
+        transform: scale(1.1);
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px darkgray;
+    }
+    button{
+        margin:10px;
+        background-color:orange;
+        color:white;
+        border:3px solid black;
+        box-shadow: 3px 3px 3px orangered;
+        transition:0.3s;
+        cursor:pointer;
+    }
+    button:hover{
+        border-radius: 5px;
+        box-shadow: 10px 10px 10px rgb(176, 12, 12);
+    }
+}
+#membership{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 20px;
+    gap:10px;
+    padding:10px;
+    border:3px solid blue;
+    box-shadow: 5px 5px 5px darkcyan;
+    text-align: center;
+    .pricing{
+        border:3px solid aqua;
+        box-shadow: 5px 5px 5px rgb(22, 22, 177);
+        transition:0.3s;
+    }
+    .pricing:hover{
+        transform:translateY(-6.5px);
+        box-shadow: 10px 10px 10px darkblue;
+    }
+    #plan{
+        font-size: 25px;
+        width:50%;
+        margin:auto;
+        color:red;
+        border:3px solid rgb(249, 92, 49);
+        box-shadow: 5px 5px 5px orangered;
+        transition: 0.3s;
+    }
+    #plan:hover{
+        transform:scale(1.1);
+    }
+    button{
+        margin:15px;
+        background-color:#ff512f;
+        cursor: pointer;
+        color:white;
+        border:3px solid black;
+        box-shadow: 3px 3px 3px rgb(228, 21, 124);
+        transition:0.3s;
+    }
+    button:hover{
+        background: linear-gradient(135deg, #ff512f, #dd2476);
+        border-radius: 5px;
+        transform: scale(1.1);
+        box-shadow: 10px 10px 10px rgb(221, 26, 58);
+    }
+}
+#calculator{
+    display:flex;
+    margin-top: 20px;
+    width:100%;
+    padding:10px;
+    height:auto;
+    font-size: 16px;
+    border:3px solid blue;
+    box-shadow: 5px 5px 5px darkcyan; 
+    text-align: center;
+    position: relative;
+    input{
+        width:100%;
+        max-width: 150px;
+        margin:10px;
+        text-align: center;
+        border: 3px solid black;
+        font-size: 20px;
+        transition:0.3s;
+    }
+    input:focus{
+        border:5px solid darkslateblue;
+    }
+    #bmi{
+        position:static;
+    }
+    button{
+        margin:15px;
+        cursor: pointer;
+        background-color:aqua;
+        font-size: 18px;
+        color:blue;
+        border:3px solid black;
+        box-shadow: 5px 5px 5px darkblue;
+        transition: 0.3s;
+    } 
+    button:hover{
+        transform: scale(1.1);
+        box-shadow: 10px 10px 10px darkcyan;
+    }
+}
+#review{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 20px;
+    gap:10px;
+    padding:10px;
+    border:3px solid darkcyan;
+    box-shadow: 5px 5px 5px darkblue;
+    text-align: center;
+    .sec{
+        border:3px solid lightblue;
+        box-shadow: 5px 5px 5px rgb(88, 88, 225);
+        transition:0.3s;
+        overflow: hidden;
+    }
+    .sec:hover{
+        transform: translateY(-8px);
+        box-shadow: 7px 7px 7px darkblue;
+    }
+    img{
+        width:100%;
+        max-width:200px;
+        height:150px;
+        border:3px solid blueviolet;
+        box-shadow:5px 5px 5px rgb(118, 5, 224);
+        margin:20px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    img:hover{
+        transform: scale(1.1);
+        border-radius: 20px;
+    }
+    .star{
+        background-color: transparent;
+        transition: 0.3s;
+    }
+    .star:hover{
+        transform:scale(1.1);
+        color:rgb(110, 5, 5);
+        font-weight: 600;
+    }
+}
+#contact{
+    border:4px solid darkcyan;
+    box-shadow: 5px 5px 5px blue; 
+    margin-top: 20px;
+    text-align: center;
+    form{
+        display:flex;
+        margin-top: 20px;
+        width:100%;
+        padding:10px;
+        height:auto;
+        font-size: 16px;
+    }
+    input{
+        width:100%;
+        max-width: 150px;
+        margin:10px;
+        text-align: center;
+        border: 3px solid black;
+        font-size: 20px;
+        transition:0.3s;
+    }
+    input:focus{
+        border:7px double darkblue;
+    }
+    button{
+        margin:15px;
+        cursor: pointer;
+        background-color:transparent;
+        font-size: 18px;
+        color:blue;
+        border:3px solid black;
+        box-shadow: 5px 5px 5px darkblue;
+        transition: 0.3s;
+    } 
+    button:hover{
+        background-color: lightcyan;
+        transform: scale(1.05);
+        border-radius: 10px;
+    }
+}
+footer{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    width:100%;
+    border:5px solid black;
+    box-shadow:5px 5px 5px darkgray;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #2874F0;
+    color:white;
+    font-size:20px;
+    margin-top: 20px;
+    overflow: hidden;
+    .details{
+        gap:20px;
+       padding:10px;
+       transition:0.3s;
+    }
+    .details:hover{
+        color:rgb(12, 3, 69);
+        text-decoration: underline;
+    }
+    .social{
+        gap:20px;
+       padding:10px;
+    }
+    img{
+        width:100%;
+        max-width:200px;
+        height:150px;
+        border:5px solid darkblue;
+        box-shadow:5px 5px 5px blue;
+        margin:20px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    img:hover{
+        transform: scale(1.1);
+        border: 4px solid white;
+        box-shadow: 10px 10px 10px darkblue;
+    }
+    .bottom{
+        width:100%;
+        background-color:#133FB9 ;
+        grid-column: 1/-1;
+    }
+}
+@media(max-width:900px){
+    #gym,
+    #calculator,
+    #contact form{
+        flex-direction: column;
+        text-align: left;
+    }
+    #trainer,
+    #membership,
+    #review{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .style{
+        font-size: 30px;
+    }
+    #hero{
+        font-size:32px ;
+    }
+}
+@media(max-width:600px){
+    #gym,
+    #calculator,
+    #contact form{
+        flex-direction: column;
+        text-align:left;
+    }
+    #trainer,
+    #membership,
+    #review{
+        grid-template-columns: repeat(1,1fr);
+    }
+    footer{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .style{
+        font-size: 24px;
+    }
+    #hero{
+        font-size:26px ;
+    }
+}
